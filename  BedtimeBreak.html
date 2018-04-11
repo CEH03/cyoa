@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        
+        <title>
+          game
+        </title>
+        
+        
+        <style>
+             html, body {
+    height: 100%;
+    margin: 0;
+  }
+           body {
+            background-image: url("https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/c/c2/Forest-Wallpaper-Nature-landscape-18.jpg/revision/latest/scale-to-width-down/1300?cb=20160320200404" )
+           }
+            
+            #TalkingRobot {
+                position: absolute;
+                left: 555px;
+                top: 430px;
+            }
+           
+            #paragraphAlert {
+             position: absolute;
+             left: 400px;
+             top: 370px;
+            }
+            
+        </style>
+
+      
+
+    </head>
+
+    
+    <body>
+        
+        
+        
+        
+        <!-- <div class="alert alert-primary" role="alert" onclick= "ChangeText()"> <span id = "text1" > Hello! Welcome to the friendly forest. We hope you enjoy your stay. </span>
+            <span id = "text2"> Unfortunately, I doubt you'll be able to. You'll be quite busy exterminating monsters! </span>
+            <span id = "text3"> We couldn't find anyone to do it willingly, so we ended up with you! If you do well, you might even get to leave one day! </span>
+            <span id = "text4"> So keep working hard, because if there's one thing that's always true, it's that evil corperations always keep their promises. </span>
+            <a href= "#"
+               onclick= "ChangeText()"> <img src=""> </a> </div> -->
+        
+        
+       <a href= "#" onclick= "ChangeText()" id="paragraphAlert"> <div class="alert alert-primary" role="alert" id="paragraph">
+            </div> </a>
+        
+        <img src= "http://clipart-library.com/data_images/402868.png" width = 200 id = "TalkingRobot">
+        
+        <script>
+            var current=0;
+            
+            var sentences =
+                ["These will be your sleeping quarters. Sorry about the watermarks, we couldn't afford anything else.",
+                 "Sleep well, just remember to wake up every 45 minutes, as that's the amount of time the bed bug's toxin will take to impair your muscles and prevent you from getting help.",
+                 "So with that being said, sleep tight, and be ready for a full day of hard labor tomorrow!",
+                 ]
+            
+            document.getElementById("paragraph").innerHTML= sentences[current];
+            
+            function ChangeText() {
+                current=current+1;
+                if(current>3){
+                window.location="BedtimeBreakDescision.html"
+                }
+                else {
+             document.getElementById("paragraph").innerHTML= sentences[current];
+                    }
+                                                         
+            }
+            
+        </script>
+            
+             <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+            
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
